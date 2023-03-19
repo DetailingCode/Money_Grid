@@ -279,10 +279,10 @@ h1.company-name {
 		color: $gold;
 		margin-bottom: 2em;
 		text-align: right;
-		transition: color .3s;
+		transition: color 0.3s;
 		font-weight: bold;
 
-		&:hover{
+		&:hover {
 			color: $darkgold;
 		}
 	}
@@ -292,15 +292,13 @@ h1.company-name {
 	}
 }
 
-
-
 // ------------------ SECTION PLANS -------------------
 
-.plans{
+.plans {
 	padding: 6em 2em;
 	background-color: $darker;
 
-	&__box{
+	&__box {
 		margin: 1em 0;
 		padding: 2em 1em;
 		text-align: center;
@@ -308,29 +306,68 @@ h1.company-name {
 		border-radius: 10px;
 		background-color: $dark;
 		cursor: pointer;
-		transition: .3s;
+		transition: 0.3s;
 
-		&:hover{
+		&:hover {
 			background-color: $darker;
 			border: 1px solid $gold;
-			
 		}
 	}
-	&__item{
+	&__item {
 		margin: 1em 0;
 	}
-	&__item-icon{
+	&__item-icon {
 		width: 50px;
 	}
-	&__item-name{
+	&__item-name {
 		margin-top: 0;
 		margin-bottom: 1.5em;
 		font-size: 1.8rem;
 		color: $gold;
 	}
-
 }
-	
+
+// ------------------ SECTION NEWSLETTER -------------------
+
+.newsletter {
+	padding: 8em 2em;
+	background-color: $red;
+	text-align: center;
+
+	&__text {
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+	&__form {
+		&-input {
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: $white;
+			border: 1px solid transparent;
+		}
+		&-button {
+			padding: 1em;
+			border: 1px solid $gold;
+			color: $gold;
+			background: none;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				color: $red;
+				background-color: $gold;
+			}
+		}
+	}
+}
+
+
+
+// ------------------ SECTION GALLERY -------------------
+
 
 
 @import "./small";
