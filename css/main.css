@@ -346,6 +346,26 @@ h1.company-name {
   background-color: #d6c78e;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery__picture {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__picture:nth-child(odd) {
+  display: none;
+}
+
+.footer {
+  padding: 3em 1em;
+  text-align: center;
+  border-top: 1px solid #191919;
+}
+
 @media (min-width: 576px) {
   .info {
     grid-template-areas: "title box" "title box" "title box";

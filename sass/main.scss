@@ -369,6 +369,30 @@ h1.company-name {
 // ------------------ SECTION GALLERY -------------------
 
 
+.gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	&__picture {
+		height: 300px;
+		width: 100%;
+		object-fit: cover
+	}
+
+	&__picture:nth-child(odd){
+		display: none;
+	}
+}
+
+
+.footer{
+	padding: 3em 1em;
+	text-align: center;
+	border-top: 1px solid $darker;
+
+}
+
+
 
 @import "./small";
 @import "./medium";
