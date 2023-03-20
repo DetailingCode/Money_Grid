@@ -15,3 +15,14 @@ const handleCurrentYear = () => {
 };
 
 handleCurrentYear();
+
+const allNavItems = document.querySelectorAll(".nav__link");
+
+allNavItems.forEach((item) =>
+	item.addEventListener("click", () =>
+		navMobile.classList.remove("nav-mobile--active")
+	)
+);
+allNavItems.forEach((item) =>
+	item.addEventListener("click", () => navBtn.classList.remove("is-active"))
+);
